@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import './NavBar.scss';
+import { Link, Route, Switch } from 'react-router-dom';
+
+// Components & Styles
+import '../styles/NavBar.scss';
 
 export default class NavBar extends Component {
   render() {
@@ -7,19 +10,19 @@ export default class NavBar extends Component {
       <div className="ui container">
         <div id="icons">
           <span>
-            <button className="ui blue basic button">Blue</button>
+            <button className="ui blue basic button">Home</button>
           </span>
 
           <span>
-            <button className="ui violet basic button">Violet</button>
+            <button className="ui violet basic button">About</button>
           </span>
 
           <span>
-            <button className="ui purple basic button">Purple</button>
+            <button className="ui purple basic button">Contact</button>
           </span>
 
           <span>
-            <button className="ui pink basic button">Pink</button>
+            <button className="ui pink basic button">Media</button>
           </span>
         </div>
       </div>
