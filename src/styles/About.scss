@@ -1,89 +1,67 @@
 #about {
   background-image: url('../images/img3.jpg');
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
   background-size: cover;
+  position: absolute;
 
-  .overlay {
-    background-image: url('../images/pattern.png');
-    width: 100%;
-    height: 100%;
-    background-size: 0.4rem;
+  .intro {
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .cards-segment {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    // Flex Settings
     display: flex;
     align-items: center;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    .about-container {
-      padding: 20px;
-      height: 85%;
-      width: 60%;
-      border: solid black;
-      background-color: rgba(0, 0, 0, 0.3);
-      text-align: center;
+    // Container Sizing
+    width: 100%;
+    height: 50%;
 
-      .close-button-container {
-        padding: 20px;
-      }
+    // Positioning
+    margin-top: 8%;
 
-      .intro {
-        color: white;
-        width: 95%;
-        margin: 0 auto;
-      }
+    .about-card {
+      background-color: rgba(0, 0, 0, 0.5);
+      // // Positioning
+      margin: 0;
 
-      .title {
-        color: white;
-        padding: 20px;
-      }
+      // Card Sizing
+      min-width: 30%;
+      min-height: 100%;
 
-      .cards-segment {
-        background-color: rgba(0, 0, 0, 0.3);
+      .wrapper {
+        padding-top: 70px;
+        h2 {
+          color: white;
+          .headphones {
+            color: violet;
+          }
 
-        // Flex Settings
-        display: flex;
-        align-items: center;
-        align-self: flex-end;
-        flex-wrap: wrap;
-        justify-content: space-between;
+          .video {
+            color: lightblue;
+          }
 
-        // Container Sizing
-        width: 100%;
-        height: 50%;
+          .volume {
+            color: lightpink;
+          }
 
-        // Positioning
-        margin-top: 8%;
-
-        .about-card {
-          background-color: rgba(0, 0, 0, 0.5);
-          // // Positioning
-          margin: 0;
-
-          // Card Sizing
-          width: 30%;
-          height: 100%;
-          .wrapper {
-            padding-top: 70px;
-            h2 {
-              color: white;
-              .headphones {
-                color: violet;
-              }
-
-              .video {
-                color: lightblue;
-              }
-
-              .volume {
-                color: lightpink;
-              }
-
-              .icon-header {
-                padding: 20px;
-              }
-            }
+          .icon-header {
+            margin: 1rem;
             div {
-              color: white;
+              margin-top: 1rem;
             }
           }
+        }
+        div {
+          color: white;
         }
       }
     }

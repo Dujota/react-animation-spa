@@ -5,11 +5,11 @@ import '../styles/ContentContainer.scss';
 
 class ContentContainer extends Component {
   render() {
-    const { subject, header, children } = this.props;
+    const { header, children } = this.props;
 
     return (
       <div className="overlay">
-        <div className={`ui container ${subject}-container`}>
+        <div className={`ui container content-container`}>
           {/* CLOSE BUTTON */}
           <section className="close-button-container">
             <a href="/" className="ui secondary button close-button">
