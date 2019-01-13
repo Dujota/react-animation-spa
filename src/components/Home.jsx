@@ -4,7 +4,7 @@ import '../styles/Home.scss';
 export default class Home extends Component {
   componentDidMount = () => {
     console.log('Home mounted');
-    console.log('props', this.props);
+    !this.props.showNavBar && this.props.toggleNavBarDisplay();
   };
 
   componentWillUnmount = () => {
