@@ -1,0 +1,35 @@
+#content-container {
+  #about {
+    background-image: url('../images/img3.jpg');
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    position: absolute;
+
+    .overlay {
+      background-image: url('../images/pattern.png');
+      min-width: 100vw;
+      min-height: 100vh;
+      background-size: 0.4rem;
+      display: flex;
+      align-items: center;
+
+      .about-container {
+        padding: 20px;
+        height: 90vh;
+        width: 70%;
+        border: solid black;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        .close-button-container {
+          padding: 20px;
+        }
+
+        .title {
+          color: white;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
