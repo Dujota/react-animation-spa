@@ -33,7 +33,7 @@ class About extends Component {
                 <h2 className="ui icon header ">
                   <i className="headphones icon" />
                   <div className="content icon-header">
-                    Something Cathcy
+                    Catchy Phrase
                     <div className="sub header">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quidem dicta distinctio deleniti suscipit labore
@@ -53,7 +53,7 @@ class About extends Component {
                 <h2 className="ui icon header">
                   <i className="volume up icon" />
                   <div className="content icon-header">
-                    Second Catchy Phrase
+                    Second Phrase
                     <div className="sub header">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Sapiente totam, odio rem odit consequuntur voluptas sunt
