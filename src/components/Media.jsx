@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContentContainer from './ContentContainer';
 import '../styles/Media.scss';
 
 class Media extends Component {
@@ -18,9 +19,14 @@ class Media extends Component {
   render() {
     return (
       <div id="media">
-        <div className="overlay">
-          <div className="ui container">Media Gallery here</div>
-        </div>
+        <ContentContainer header={'Media'} path={'/'}>
+          <h3 className="ui header intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod omnis
+            soluta mollitia ex, enim quam ipsa incidunt vero reprehenderit, aut,
+            dolor voluptates. Eaque, libero tenetur rerum nostrum consequuntur
+            sit cupiditate.
+          </h3>
+        </ContentContainer>
       </div>
     );
   }

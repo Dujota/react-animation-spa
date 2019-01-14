@@ -19,14 +19,14 @@ class About extends Component {
   render() {
     return (
       <div id="about">
-        <ContentContainer subject={'about'} header={'DJ NAME'}>
+        <ContentContainer header={'DJ NAME'} path={'/'}>
           <h3 className="ui header intro">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum
             reprehenderit recusandae nemo laudantium sit libero repellat modi,
             laboriosam quibusdam dolorum, culpa magnam. Minus, nostrum.
           </h3>
 
-          <div className="ui cards-segment container">
+          <div className="ui cards-segment segment">
             {/* CARD 1 */}
             <section className="ui card about-card">
               <div className="wrapper">
@@ -44,6 +44,9 @@ class About extends Component {
               </div>
             </section>
 
+            {/* Divider */}
+            <section className="divider" />
+
             {/* CARD 2 */}
             <section className="ui card about-card">
               <div className="wrapper">
@@ -60,6 +63,9 @@ class About extends Component {
                 </h2>
               </div>
             </section>
+
+            {/* Divider */}
+            <section className="divider" />
 
             {/* CARD 3 */}
             <section className="ui card about-card">

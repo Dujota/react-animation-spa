@@ -5,14 +5,14 @@ import '../styles/ContentContainer.scss';
 
 class ContentContainer extends Component {
   render() {
-    const { header, children } = this.props;
+    const { header, children, path } = this.props;
 
     return (
       <div className="overlay">
         <div className={`ui container content-container`}>
           {/* CLOSE BUTTON */}
           <section className="close-button-container">
-            <a href="/" className="ui secondary button close-button">
+            <a href={path} className="ui secondary button close-button">
               Close
             </a>
           </section>
@@ -32,8 +32,8 @@ class ContentContainer extends Component {
 }
 
 ContentContainer.propTypes = {
-  subject: PropTypes.string.isRequired,
-  header: PropTypes.string.isRequired
+  header: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired
 };
 
 export default ContentContainer;
