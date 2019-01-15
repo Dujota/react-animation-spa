@@ -23,17 +23,17 @@ export default class NavBar extends Component {
       <div>
         {/* NAV BAR STARTS HERE */}
         {showNavBar && (
-          <nav id="icons" className="ui container">
-            <span>
+          <nav id="navbar" className="ui container">
+            {/* <span>
               <Link to="/">
-                <button className="ui blue basic button">Home</button>
+                <button className="ui inverted blue  button">Home</button>
               </Link>
-            </span>
+            </span> */}
 
             <span>
               <Link to="/about">
                 <button
-                  className="ui violet basic button"
+                  className="ui inverted blue basic button"
                   onClick={this.props.toggleNavBarDisplay}
                 >
                   About
@@ -44,7 +44,7 @@ export default class NavBar extends Component {
             <span>
               <Link to="/contact">
                 <button
-                  className="ui purple basic button"
+                  className="ui inverted violet basic button"
                   onClick={this.props.toggleNavBarDisplay}
                 >
                   Contact
@@ -55,7 +55,7 @@ export default class NavBar extends Component {
             <span>
               <Link to="/media">
                 <button
-                  className="ui pink basic button"
+                  className="ui inverted purple basic button"
                   onClick={this.props.toggleNavBarDisplay}
                 >
                   Media
