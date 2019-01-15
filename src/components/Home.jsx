@@ -14,7 +14,7 @@ export default class Home extends Component {
   render() {
     return (
       <div id="home">
-        <div className="overlay" />
+        <div className="home-overlay" />
       </div>
     );
   }
