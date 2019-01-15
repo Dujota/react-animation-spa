@@ -26,9 +26,9 @@ class About extends Component {
             laboriosam quibusdam dolorum, culpa magnam. Minus, nostrum.
           </h3>
 
-          <div className="ui cards-segment segment">
+          <div className="ui cards-segment">
             {/* CARD 1 */}
-            <section className="ui card about-card">
+            <section className="ui about-card">
               <div className="wrapper">
                 <h2 className="ui icon header ">
                   <i className="headphones icon" />
@@ -48,7 +48,7 @@ class About extends Component {
             <section className="divider" />
 
             {/* CARD 2 */}
-            <section className="ui card about-card">
+            <section className="ui about-card">
               <div className="wrapper">
                 <h2 className="ui icon header">
                   <i className="volume up icon" />
@@ -68,7 +68,7 @@ class About extends Component {
             <section className="divider" />
 
             {/* CARD 3 */}
-            <section className="ui card about-card">
+            <section className="ui about-card">
               <div className="wrapper">
                 <h2 className="ui icon header">
                   <i className="video icon" />

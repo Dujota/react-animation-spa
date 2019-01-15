@@ -34,10 +34,11 @@
 
     // Container Sizing
     height: 50%;
-    width: 80%;
+    width: 70%;
 
     // Positioning
     margin: 0 auto;
+    margin-top: 5%;
 
     // DIVIDERS
     .divider {
@@ -47,19 +48,24 @@
 
     // CARDS
     .about-card {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: transparent;
+      outline: none;
+      border-color: transparent;
+      // background-size: stretch;
+
       // // Positioning
       margin: 0;
+      padding-top: 6rem;
 
       // Card Sizing
       max-width: 25%;
 
       min-width: 150px;
       // max-height: 200px;
-      max-height: 90%;
+      height: 100%;
 
       .wrapper {
-        padding-top: 15px;
+        // padding-top: 15px;
         h2 {
           font-size: 25px;
           color: white;
