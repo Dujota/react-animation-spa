@@ -15,22 +15,42 @@
   position: fixed;
   top: 0;
   left: 0;
+  .contact-content {
+    display: flex;
+    .contact-details {
+      width: 50%;
 
-  .intro {
-    color: white;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  form {
-    width: 50%;
-
-    .field {
-      input,
-      textarea {
+      .contact-me-text {
+        line-height: 175%;
         color: white;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: solid 0.1rem rgba(255, 255, 255, 0.4);
+        width: 90%;
+      }
+    }
+    .form-content {
+      width: 50%;
+      form {
+        .field {
+          textarea {
+            height: 250px;
+          }
+          input,
+          textarea {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: solid 0.1rem rgba(255, 255, 255, 0.4);
+          }
+          ::placeholder {
+            font-size: 1.2rem;
+          }
+        }
+
+        .submit-button {
+          position: absolute;
+          left: 0;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.15);
+          border: solid 0.1rem rgba(255, 255, 255, 0.4);
+        }
       }
     }
   }
