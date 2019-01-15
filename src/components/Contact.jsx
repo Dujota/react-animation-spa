@@ -28,6 +28,26 @@ class Contact extends Component {
                 quia tenetur officiis dolores at, possimus atque earum doloribus
                 dolore tempore dicta qui.
               </h5>
+
+              <div className="email-icon">
+                <i className="envelope outline icon" />
+                <span className="text-content">DJName@example.com</span>
+              </div>
+
+              <div className="website-icon">
+                <i class="globe icon" />
+                <span className="text-content">www.DJName.com</span>
+              </div>
+
+              <div className="facebook-icon">
+                <i class="facebook f icon" />
+                <span className="text-content">DJName Profile Link</span>
+              </div>
+
+              <div className="instagram-icon">
+                <i class="instagram icon" />
+                <span className="text-content">@DJName</span>
+              </div>
             </section>
 
             <section className="form-content">
