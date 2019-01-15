@@ -1,6 +1,6 @@
 #contact {
   // BG IMAGE
-  background-image: url('../images/img3.jpg');
+  background-image: url('../images/img1.jpg');
   background-size: cover;
 
   /* Set rules to fill background */
@@ -20,5 +20,18 @@
     color: white;
     width: 80%;
     margin: 0 auto;
+  }
+
+  form {
+    width: 50%;
+
+    .field {
+      input,
+      textarea {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: solid 0.1rem rgba(255, 255, 255, 0.4);
+      }
+    }
   }
 }

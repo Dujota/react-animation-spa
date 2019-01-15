@@ -27,26 +27,18 @@ class Contact extends Component {
             dicta qui.
           </h3>
 
-          <div className="ui form">
-            <div class="inline fields">
-              <div class="eight wide field">
-                <label>Contact Details</label>
-                <input type="email" placeholder="Email Name" />
-              </div>
-
-              <div class="three wide field">
-                <input type="text" placeholder="First Name" />
-              </div>
-              <div class="five wide field">
-                <input type="text" placeholder="Last Name" />
-              </div>
+          <form className="ui form">
+            <div className="field">
+              <input type="text" name="name" placeholder="Name" />
+            </div>
+            <div className="field">
+              <input type="text" name="email" placeholder="Email Address" />
             </div>
 
             <div className="field">
-              <label>Let me know more about the details</label>
-              <textarea />
+              <textarea placeholder="Shoot me a Line!" />
             </div>
-          </div>
+          </form>
         </ContentContainer>
       </div>
     );
