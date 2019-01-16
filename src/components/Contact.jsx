@@ -21,6 +21,7 @@ class Contact extends Component {
       <div id="contact">
         <ContentContainer header={'Contact'} path={'/'}>
           <div className="contact-content">
+            {/* DETAILS SECTION */}
             <section className="contact-details">
               <h5 className="contact-me-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
@@ -49,7 +50,7 @@ class Contact extends Component {
                 <span className="text-content">@DJName</span>
               </div>
             </section>
-
+            {/* CONTACT FORM  */}
             <section className="form-content">
               <form className="ui form">
                 <div className="field">
