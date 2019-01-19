@@ -29,7 +29,7 @@ class Contact extends Component {
         <ContentContainer header={'Contact'} path={'/'}>
           <div className='contact-content'>
             {/* DETAILS SECTION */}
-            <section className='contact-details slower'>
+            <section className='contact-details '>
               <h5 className='contact-me-text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
                 animi deleniti. Dolor laborum impedit tempora minus adipisci
@@ -58,7 +58,7 @@ class Contact extends Component {
               </div>
             </section>
             {/* CONTACT FORM  */}
-            <section className='form-content slower'>
+            <section className='form-content '>
               <form className='ui form'>
                 <div className='field'>
                   <input type='text' name='name' placeholder='Name' rows='5' />

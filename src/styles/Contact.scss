@@ -19,6 +19,7 @@
     display: flex;
     .contact-details {
       width: 50%;
+      animation-duration: 2.7s;
 
       .contact-me-text {
         font-size: 1.25rem;
@@ -53,6 +54,7 @@
     }
     .form-content {
       width: 50%;
+      animation-duration: 3s;
       form {
         .field {
           textarea {
