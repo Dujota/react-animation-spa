@@ -11,22 +11,35 @@ class Contact extends Component {
   componentDidMount = () => {
     console.log(animateCss);
     console.log('Contact mounted');
-    animateCss('.contact-details', 'fadeInLeft');
-    animateCss('.form-content', 'fadeInRight');
-
+    if (this.state.loading) {
+      animateCss('.contact-details', 'fadeInLeft');
+      animateCss('.form-content', 'fadeInRight');
+      this.setState({ loading: false });
+    }
     this.props.showNavBar && this.props.toggleNavBarDisplay();
   };
 
-  componentWillUnmount = () => {
-    console.log('Contact unmounted');
-    animateCss('.contact-details', 'fadeOutRight');
-    animateCss('.form-content', 'fadeOutLeft');
+  closeAnimation = () => {
+    animateCss('.close-icon', 'rotateOut');
+    animateCss('.contact-details', 'fadeOutLeft');
+    animateCss('.form-content', 'fadeOutRight');
+    animateCss('.content-container', 'fadeOut');
+  };
+
+  handleCloseButton = () => {
+    this.closeAnimation();
+
+    setTimeout(() => {
+      window.location.assign('/');
+    }, 2000);
   };
 
   render() {
     return (
       <div id='contact'>
-        <ContentContainer header={'Contact'} path={'/'}>
+        <ContentContainer
+          header={'Contact'}
+          handleCloseButton={this.handleCloseButton}>
           <div className='contact-content'>
             {/* DETAILS SECTION */}
             <section className='contact-details '>

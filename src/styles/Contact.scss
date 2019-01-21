@@ -15,11 +15,13 @@
   position: fixed;
   top: 0;
   left: 0;
+
   .contact-content {
     display: flex;
+
     .contact-details {
       width: 50%;
-      animation-duration: 2.7s;
+      animation-duration: 3s;
 
       .contact-me-text {
         font-size: 1.25rem;
@@ -39,9 +41,11 @@
         font-size: 1.8rem;
         margin-left: 10%;
         padding-bottom: 2rem;
+
         i {
           color: rgba(255, 255, 255, 0.55);
         }
+
         .text-content {
           margin-left: 1rem;
           font-size: 1.5rem;
@@ -55,11 +59,13 @@
     .form-content {
       width: 50%;
       animation-duration: 3s;
+
       form {
         .field {
           textarea {
             height: 250px;
           }
+
           input,
           textarea {
             color: white;

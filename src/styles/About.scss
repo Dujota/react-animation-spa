@@ -35,17 +35,19 @@
     justify-content: space-evenly;
 
     // Container Sizing
-    height: 50%;
-    width: 70%;
+
+    // height: 50%;
+    // width: 70%;
 
     // Positioning
-    margin: 0 auto;
-    margin-top: 5%;
+
+    // margin: 0 auto;
+    // margin-top: 1.4rem;
 
     // DIVIDERS
     .divider {
       border-left: solid 0.1rem lightgrey;
-      height: 80%;
+      min-height: 250px;
     }
 
     // CARDS
@@ -53,7 +55,7 @@
       background-color: transparent;
       outline: none;
       border-color: transparent;
-      line-height: 150%;
+      animation-duration: 3.3s;
 
       // Positioning
       margin: 0;
@@ -83,8 +85,10 @@
 
           .icon-header {
             margin: 0.5rem;
+
             div {
               margin-top: 0.7rem;
+              line-height: 150%;
             }
           }
         }

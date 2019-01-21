@@ -4,26 +4,34 @@ import '../styles/ContentContainer.scss';
 import { animateCss } from '../utils/animate';
 
 class ContentContainer extends Component {
-  componentDidMount() {
-    console.log('Containeter mounted');
-    animateCss('.title', 'fadeIn');
-  }
+  state = {
+    loading: true
+  };
 
-  componentWillUnmount() {
-    console.log('container Unmounted');
-  }
+  componentDidMount = () => {
+    animateCss('.content-container', 'fadeIn', () => {
+      this.pulseHover();
+      this.setState({ loading: false });
+    });
+  };
+
+  pulseHover = () => animateCss('.close-icon', 'pulse');
 
   render() {
-    const { header, children, path } = this.props;
-
+    const { header, children, handleCloseButton } = this.props;
+    const { loading } = this.state;
     return (
       <div className='overlay'>
-        <div className={`ui container content-container`}>
+        <div className='ui container content-container'>
           {/* CLOSE BUTTON */}
+
           <section className='close-button-container'>
-            <a href={path} className='ui secondary button close-button'>
-              Close
-            </a>
+            <i
+              className='close icon close-icon'
+              onClick={!loading ? handleCloseButton : undefined}
+              onMouseEnter={!loading ? this.pulseHover : undefined}
+            />
+            <span className='close-text'>Close</span>
           </section>
 
           {/* HEADER */}
